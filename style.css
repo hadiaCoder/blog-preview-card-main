@@ -1,0 +1,66 @@
+:root{
+    --para-size: 16px;
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+/* 500 800 size of font only  */
+body{
+    font-family: "Figtree", serif;
+    background-color: var(--Yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+width:20rem;
+background-color: var(--White);
+padding:20px;
+border-radius: 20px;
+margin-top: 100px;
+border:1px solid var(--Gray-950);
+box-shadow: 4px 4px 4px 4px;
+}
+.card svg{
+width: 100%;
+}
+
+.intro-text h4{
+    background-color: var(--Yellow);
+    width:fit-content;
+    padding:10px;
+    font-weight: 800;
+    font-size: var(--para-size);
+}
+.intro-text p{
+    font-size:13px;
+}
+
+.foundation-section h1{
+    font-size:23px;
+    font-weight: 800;
+    color: var(--Gray-950);
+    transition: 0.3s;
+}
+.foundation-section h1:hover{
+    cursor: pointer;
+    color:var(--Yellow);
+}
+.foundation-section p{
+    color:var(--Gray-500);
+}
+.profile-section{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.profile-section a{ 
+    text-decoration: none;
+    color:var(--Gray-950);
+    font-weight: 800;
+    font-size: 15px;
+}
